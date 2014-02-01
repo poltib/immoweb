@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Site de vente de biens immobilier">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+		<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<title>Accueil | Immoweb</title>
+	</head>
+	<body>
+
+		<header role="banner">
+			<div class="container">
+				<div id="ban">
+					<div id="logo"><h1>Immoweb <br><span>Le 1er site immobilier</span></h1></div>
+					<form action="#" class="login">
+						<fieldset>
+							<h2 role="heading" aria-level="2">Identification</h2>
+							<ul>
+								<li>
+									<label for="Login">Login&nbsp;</label>
+									<input type="text" name="Login" id="Login">
+								</li>
+								<li>
+									<label for="mdp">Password&nbsp;</label>
+									<input type="password" name="mdp" id="mdp">
+								</li>
+								<li>
+									<input type="submit" value="connexion">
+									<a href="#">S'inscrire&nbsp;</a>
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+				</div>
+				<section id="recherche">
+					<section>
+						<h2 role="heading" aria-level="2">Recherche</h2>
+					<p>Effectuez une recherche précise dans le site à l'aide de ce formulaire.</p>
+					</section>
+					<form  role="search"  action="#">
+						<fieldset>
+							<section class="left search">
+								<ol>
+									<li>
+									<label for="typeAchat">Type d'achat&nbsp;</label>
+									<select name="typeAchat" id="typeAchat">
+										<option value="tous">tous</option>
+										<option value="vendre">à vendre</option>
+										<option value="louer">à louer</option>
+										<option value="locationVacance">location de vacance</option>
+										<option value="ventePublique">vente publique</option>
+									</select>
+									</li>
+
+									<li>
+									<label for="typeBien">Type du bien&nbsp;</label>
+									<select name="typeBien" id="typeBien">
+										<option value="toutNosBiens">tout nos biens</option>
+										<option value="maison">maison</option>
+										<option value="appartement">appartement</option>
+										<option value="terrain">terrain</option>
+										<option value="commerce">commerce</option>
+										<option value="bureau">bureau
+										</option>
+										<option value="maisonAconstruire">maison à construire</option>
+										<option value="autre">autre</option>
+									</select>
+									</li>
+
+									<li>
+									<label for="neuf">Seulement neuf&nbsp;</label>
+									<input type="checkbox" name="neuf" id="neuf">
+									</li>
+								</ol>
+							</section>
+							<section class="right search">
+								<ol>
+									<li>
+									<label for="pays">Pays&nbsp;</label>
+									<select name="pays" id="pays">
+										<option value="belgique">Belgique</option>
+										<option value="france">France</option>
+										<option value="espagne">Espagne</option>
+									</select>
+									</li>
+
+									<li>
+									<label for="lieu">Lieu&nbsp;</label>
+									<input type="text" name="lieu" id="lieu">
+									</li>
+
+									<li>
+									<input type="submit" value="Recherche">
+									</li>
+								</ol>
+							</section>
+						</fieldset>
+					</form>
+					
+				</section>
+			</div>
+		</header>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="#">Ventes à la une</a></li>
+					<li><a href="#">Actualitées</a></li>
+					<li><a href="#">Guides</a></li>
+					<li><a href="#">Bâtir et Rénover</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, deleniti, blanditiis esse doloremque alias quas harum corrupti voluptates perspiciatis molestiae ad repudiandae iste? Ea, quis, a nobis sed nesciunt eaque!</p>
+			<section class="une gallery">
+				<h2 role="heading" aria-level="2">A la une</h2>
+				<article itemscope itemtype="http://schema.org/Product">
+					<figure><img itemprop="image" src="img/maison3.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3" itemprop="name">Be at Home</h3>
+					<p itemprop="description">4000 - Liège Proche du centre-ville. De 1à4 ch. de 69m² à 296m². A partir de 165.000€ <a href="#" title="voir l'annonce">Voir l'annonce</a></p>
+				</article>
+				<article itemscope itemtype="http://schema.org/Product">
+					<figure><img itemprop="image" src="img/maison5.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3" itemprop="name">Résidence Courtois</h3>
+					<p itemprop="description">4052 - Magnifique résidence de 7 appartements de haut standing eco-construction <a href="#" title="voir l'annonce">Voir l'annonce</a></p>
+				</article>
+				<article itemscope itemtype="http://schema.org/Product">
+					<figure><img itemprop="image" src="img/maison3.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3" itemprop="name">POUR INVESTISSEURS</h3>
+					<p itemprop="description">Maison de rapport rez de chaussées+ deux étages et grenier aménagé,avec cour et  atelier,... <a href="#" title="voir l'annonce">Voir l'annonce</a></p>
+				</article>
+				<article itemscope itemtype="http://schema.org/Product">
+					<figure><img itemprop="image" src="img/maison4.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3" itemprop="name">Brasschaat</h3>
+					<p itemprop="description">Rue Stévin proche du Rd Pt Schuman et du Square Marie Louise, lumineuse et bonne... <a href="#" title="voir l'annonce">Voir l'annonce</a></p>
+				</article>
+				<article itemscope itemtype="http://schema.org/Product">
+					<figure><img itemprop="image" src="img/maison5.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3" itemprop="name">Très belle maison</h3>
+					<p itemprop="description">Très belle maison unifamiliale à vendre à 1000 Bruxelles --- Elle est composée... <a href="#" title="voir l'annonce">Voir l'annonce</a></p>
+				</article>
+			</section>
+			<section class="news gallery">
+				<h2 role="heading" aria-level="2">Actualitées</h2>
+				<article>
+					<figure><img src="img/news1.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3">Nos conseils énergie</h3>
+					<p>L'énergie ? Chère ! Isoler ? Nécessaire ! Economiser ? Intelligent ! Immoweb ? Pratique !
+Vous l'aurez compris : Immoweb vous facilite une fois de plus la vie. Nous avons développé pour vous Energy House, une maison virtuelle qui vous donne plein d'informations utiles. <a href="#" title="lire la suite de l'article">Lire la suite</a></p>
+				</article>
+				<article>
+					<figure><img src="img/news2.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3">Nouvelle construction</h3>
+					<p>Votre maison est (pratiquement) finie. Les derniers travaux ont été réalisés et vous êtes en mesure de prendre possession des lieux même si, ça et là, il reste quelques petits parachèvement à effectuer. Le temps est venu pour réceptionner votre nouvelle construction. <a href="#" title="lire la suite de l'article">Lire la suite</a></p>
+				</article>
+				<article>
+					<figure><img src="img/maison1.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3">Résidence de vacances</h3>
+					<p>2 possibilités se présentent. Le propriétaire et le locataire règlent toutes les transactions locatives de gré à gré. L’alternative est de faire appel à une agence de location. Avantages... <a href="#" title="lire la suite de l'article">Lire la suite</a></p>
+				</article>
+				<article>
+					<figure><img src="img/news4.jpg" alt=""></figure>
+					<h3 role="heading" aria-level="3">Marché immobilier</h3>
+					<p>Le « baromètre des notaires », portant sur le 2e trimestre 2013, laisse entrevoir un marché immobilier en légère croissance : + 2% par rapport au 1er trimestre. <a href="#" title="lire la suite de l'article">Lire la suite</a></p>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<div class="container">
+				<section class="guides">
+					<h4 role="heading" aria-level="4">Nos guides</h4>
+					<figure><a href="#"><img src="img/acheter.jpg" alt=""></a></figure>
+					<figure><a href="#"><img src="img/louer.jpg" alt=""></a></figure>
+					<figure><a href="#"><img src="img/demenager.jpg" alt=""></a></figure>
+					<figure><a href="#"><img src="img/construire.jpg" alt=""></a></figure>
+				</section>
+				<section>
+					<h4 role="heading" aria-level="4">Les sites du group Axel Springer</h4>
+					<ul>
+						<li><a href="#">AxelSpringer.fr</a></li>
+						<li><a href="#">Auto</a></li>
+						<li><a href="#">Comparateur de prix</a></li>
+						<li><a href="#">Emploi</a></li>
+						<li><a href="#">Immobilier</a></li>
+						<li><a href="#">Performance marketing</a></li>
+						<li><a href="#">Cours des actions</a></li>
+						<li><a href="#">Codes promo</a></li>
+						<li><a href="#">Feminins</a></li>
+					</ul>
+				</section>
+				<section>
+					<h4 role="heading" aria-level="4">Nos sites partenaires</h4>
+					<figure><a href="#"><img src="img/p1.jpg" alt=""></a></figure>
+					<figure><a href="#"><img src="img/p2.gif" alt=""></a></figure>
+					<figure><a href="#"><img src="img/p3.jpg" alt=""></a></figure>
+					<figure><a href="#"><img src="img/p4.jpg" alt=""></a></figure>
+					<figure><a href="#"><img src="img/p5.jpg" alt=""></a></figure>
+				</section>
+				<section>
+					<h4 role="heading" aria-level="4">© IMMOWEB SA/NV 2013</h4>
+					<ul>
+						<li><a href="#">Qui sommes nous?</a></li>
+						<li><a href="#">Nous contacter</a></li>
+						<li><a href="#">Suggestions</a></li>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Partenaires</a></li>
+						<li><a href="#">Vie privée</a></li>
+						<li><a href="#">Conditions d'utilisation / Information légale</a></li>
+						<li><a href="#">Sitemap</a></li>
+						<li><a href="#">Immoweb France</a></li>
+					</ul>
+				</section>
+				<section class="guides">
+					<h4 role="heading" aria-level="4">Nous trouver</h4>
+					<figure><a href="#"><img src="img/fb.png" alt=""></a></figure>
+					<figure><a href="#"><img src="img/tw.png" alt=""></a></figure>
+					<figure><a href="#"><img src="img/mobile.png" alt=""></a></figure>
+					<figure><a href="#"><img src="img/android.png" alt=""></a></figure>
+				</section>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,454 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "base";
+@import "compass"; 
+@import "normalize"; 
+@import "colors";  
+
+header{
+   background: fixed no-repeat url("../img/back.png");
+}
+
+body{  
+   font-family: "Open sans", Helvetica, Arial, sans-serif;
+	a{ text-decoration: none; }
+	.container{
+		@include container($total-columns, $mobile, $tablet, $computer);
+      //@include susy-grid-background;
+      #ban{
+         #logo{
+            margin-bottom: 0.5em;
+            color:white;
+            text-align: center;
+            line-height: 1.2em;
+            h1{
+               padding:0.6em;
+               margin:0;
+            }
+            background-color: rgba(0,0,0,0.5);
+            span{
+               font-size: 0.5em;
+            }
+         }
+      }
+      #ban:after{
+         content:"";
+         display: block;
+         clear: both;
+      }
+   }
+}
+h1      { font-size: 2em;}
+h2      { font-size: 1.5em;}
+h3      { font-size: 1.17em;}
+h4      { font-size: 1em;}
+h5      { font-size: 0.83em;}
+h6      { font-size: 0.75em;}
+
+
+#recherche{
+   padding:1em;
+   background-color: rgba(0,0,0,0.5);
+   color:white;
+   h2{
+      margin:0;
+   }
+   p{
+      margin:0.3em;
+   }
+
+   form{
+      margin-top: 1em;
+      fieldset{
+         border:none;
+         margin:0;
+         padding:0;
+      }
+      label{
+         line-height: 18px;
+         margin:2px 0 2px;
+         text-align: right;
+      }
+      select{
+         padding:0;
+      }
+      input{
+         padding:0.1em 0;
+         margin:0;
+         border:1px solid silver;
+         font-size: 0.8em;
+         @include border-radius(3px,3px);
+      }
+      input[type="submit"]{
+         float: right;
+         margin-right: 0.5em;
+      }
+
+      input[type="checkbox"]{
+         margin-top: 0.3em;
+         height: 18px;
+      }
+
+
+   }
+}
+
+input[type="submit"]{
+   background-color: $blue;
+   color:white;
+}
+
+input[type="submit"]:hover{
+   background-color: $green;
+   color:black;
+}
+
+#recherche:after{ 
+   content:"";
+   display: block;
+   clear: both;
+}
+
+.search ol{
+   list-style-type: none;
+   padding:0;
+   margin:0;
+   li{
+      @include span-columns(10);
+      margin-bottom: 0.4em;
+   }
+}
+.search ol:after{
+   content:"";
+   display: block;
+   clear: both;
+}
+
+section a{
+   color:$blue;
+}
+
+section a:hover{
+   color:$green;
+   text-decoration: underline;
+}
+
+.gallery{
+   article{
+      font-size:0.8em;
+      background-color: rgba(240,240,240,0.7);
+      margin-bottom: 1em;
+      box-shadow: 0 0 6px #aaa;
+      figure{
+         padding:0;
+         margin:0;
+         img{
+            max-width: 96%;
+            z-index: -10; 
+            margin:0;
+            padding:3px;
+         }
+      }
+      figure img:after{
+         content:"";
+         display: block;
+         clear: both;
+      }
+      p{
+         padding: 0.3em;
+         margin:0;
+      }
+      h3{
+         display: block;
+         margin:0;
+         padding:0.3em;
+         text-shadow: 1px 1px 2px white;
+         color:$blue; 
+         background-color: $green;
+      }
+   }
+}
+
+.login{
+   background-color: rgba(0,0,0, 0.5);
+   color:white;
+
+   fieldset{
+      border:none;
+      padding:1em;
+      margin:0;
+      h2{
+         margin:0 0 0.5em;
+      }
+      ul{
+         list-style-type: none;
+         padding:0;
+         margin:0;
+         li{
+            @include span-columns(10);
+            label{
+               text-align: right;
+               margin:0;
+            }
+            input{
+               margin-bottom:0.3em;
+               padding:0.1em 0;
+               border:1px solid silver;
+               font-size: 0.8em;
+               @include border-radius(3px,3px);
+            }
+            a{
+               text-align: right;
+               display: block;
+            }
+         }
+      }
+      ul li:after{
+         content:"";
+         display: block;
+         clear: both;
+      }
+   }
+}
+
+.guides figure{
+   margin:0 0 1em;
+}
+
+.news article{
+   figure{
+      border-top: 3px solid $green;
+      margin:0;
+      img{
+         padding:1px;
+      }
+   }
+}
+
+.gallery:after{
+   content:"";
+   display: block;
+   clear: both;
+}
+
+h2{
+   color:$green;
+   border-left: 5px solid $blue;
+   border-bottom: 5px solid $blue;
+   padding:0 0.5em 0;
+   display: inline-block;
+}
+
+nav{
+   margin-top: 1em;
+   background-color: rgba(0,0,0,0.8);
+   @include border-radius(5px,5px);
+   ul{
+      list-style-type: none;
+      margin:0;
+      padding:0;
+   }
+
+   li{
+      display: inline-block;
+      text-align: center;
+      a{
+         padding: 0.7em;
+         display: inline-block; 
+         color:silver; 
+      }
+      a:hover{
+         @include single-transition(color, 0.5s);
+         color: $green;
+      }
+   }
+}
+
+nav:after{
+   content:"";
+   display: block;
+   clear: both;
+}
+
+
+header{
+   background-color: rgba(0,0,0,0.3);
+   box-shadow: 0px 4px 8px rgb(80,80,80);
+   padding-bottom: 1em;
+
+}
+
+footer{
+   padding-bottom: 1em;
+   background-color: $blue;
+   box-shadow: 0px -4px 8px rgb(80,80,80);
+   margin-top: 1em;
+   a{
+      color:$green;
+      border-color: $green;
+   }
+   a:hover{
+      color:white;
+   }
+
+   img{
+      max-width: 100%;
+      margin:0;
+      opacity:0.7;
+   }
+   img:hover{
+      opacity:1;
+   }
+
+}
+
+footer section{
+
+   p, ul{
+      font-size: 0.8em;
+   }
+   h4{
+      color:white;
+   }
+   ul{
+      list-style-type: none;
+      margin:0;
+      padding:0.3em;
+      li{
+         margin-bottom: 0.5em;
+      }
+   }
+}
+
+
+@include at-breakpoint($mobile){
+   footer section{
+      @include span-columns(10,10);
+   }
+
+   nav ul{
+      @include span-columns(10,10);
+      text-align: left;
+   }
+   select, input, label{
+      @include span-columns(5,10);
+   }
+   .une article{
+      border-top: 3px solid $green;
+   }
+   .news article figure img{
+      border: 1px solid $green;
+   }
+   .news, .une{
+      article{
+         @include span-columns(10,10);
+         figure{
+            @include span-columns(4,10);
+         }
+      }   
+   }
+   footer .guides figure{
+      @include span-columns(2,10);
+   }
+   .search{
+      @include span-columns(10,10);
+   }
+
+   #ban {
+      .login{
+         @include span-columns(10,10);
+         fieldset{
+            h2{
+               display: inline-block;
+            }
+         }
+         input{
+            @include span-columns(5 omega,10);
+         }
+         margin-bottom: 0.5em;
+      }
+      #logo{
+        @include span-columns(9,10);
+      }
+   }
+
+}
+
+@include at-breakpoint($tablet){
+   footer section{
+      @include span-columns(2,10);
+      &:nth-child(5) { @include omega; }
+   }
+
+   nav ul li{
+      @include span-columns(2,10);
+      &:nth-child(5) { @include omega; }
+      text-align: center;
+   }
+   #ban {
+      .login{
+         fieldset{
+            h2{
+               display: none;
+            }
+            border-top:none;
+         }
+         @include span-columns(3.8 omega,10);
+         input{
+            @include span-columns(1.9 omega,3.9);
+         }
+      }
+      #logo{
+         @include span-columns(6,10);
+      }
+   }
+   footer .guides figure{
+      @include span-columns(1,2);
+      &:nth-child(2n) { @include omega; }
+   }
+   .right,{
+      @include span-columns(5 omega,10);
+   }  
+   .left{
+    @include span-columns(5,10);
+   } 
+}
+
+@include at-breakpoint($computer){
+   .une article{
+      border:none;
+      @include span-columns(2,10);
+      &:nth-child(5) { @include omega; }
+      figure{
+         @include span-columns(10,10);
+         
+      }
+   }
+
+   #recherche>section{
+      @include span-columns(2,10);
+      border-right: 1px dotted black;
+   }
+   #ban {
+      .login{
+         @include span-columns(2.5 omega,10);
+         input{
+            @include span-columns(1.4 omega,3);
+         }
+      }
+      #logo{
+         @include span-columns(4,10);
+      }
+   }
+   .news{
+      article{
+         @include span-columns(5,10);
+         &:nth-child(2n) { @include omega; }
+         figure{
+            @include span-columns(2,5);
+         }
+      }   
+   }
+}
